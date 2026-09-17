@@ -10,7 +10,7 @@ real user interactions, and communicates step progress to
 Pin a commit so the generated tutorial remains reproducible:
 
 ```bash
-npm install github:tutorializer/tours#COMMIT_SHA
+npm install https://github.com/tutorializer/tours/archive/COMMIT_SHA.tar.gz
 ```
 
 ## Initialize the product
