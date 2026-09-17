@@ -1,0 +1,18 @@
+{
+  "name": "@tutorializer/tours",
+  "version": "0.1.0",
+  "description": "Browser runtime for executable tours defined in tours.json",
+  "license": "MIT",
+  "repository": "github:tutorializer/tours",
+  "type": "module",
+  "exports": {
+    "./*": "./*"
+  },
+  "scripts": {
+    "test": "vitest run --config vitest.public.config.js"
+  },
+  "devDependencies": {
+    "jsdom": "26.0.0",
+    "vitest": "5.0.0"
+  }
+}
