@@ -14,9 +14,7 @@ const getSpeed = () => options.speed || 1
 
 const CURSOR_TYPES = {
   arrow: {
-    color: 'var(--color-orange)',
-    colorFallback: '#f5a623',
-    colorWithFallback: 'var(--color-orange, #f5a623)',
+    color: 'var(--color-orange, #f5a623)',
     textShadow: '0 0 2px white, 0 0 2px white',
     size: 36,
     svg: color => `
@@ -26,9 +24,7 @@ const CURSOR_TYPES = {
       </svg>`,
   },
   hand: {
-    color: 'var(--color-orange)',
-    colorFallback: '#f5a623',
-    colorWithFallback: 'var(--color-orange, #f5a623)',
+    color: 'var(--color-orange, #f5a623)',
     textShadow: '0 0 2px white, 0 0 2px white',
     size: 40,
     svg: color => `
@@ -1297,7 +1293,7 @@ export const showOverlayWithKaraoke = (audioBase64, alignment) =>
         }
         // Highlight current
         if (activeIndex >= 0 && activeIndex < spans.length) {
-          spans[activeIndex].style.color = getCursorConfig().colorWithFallback
+          spans[activeIndex].style.color = getCursorConfig().color
           spans[activeIndex].style.fontWeight = 'bold'
           spans[activeIndex].style.transform = 'scale(1.05)'
         }
